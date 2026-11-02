@@ -10,8 +10,7 @@ Existing Vantage installations update through the application. Version 0.16.6 is
 
 ## Channels
 
-- **Stable:** normal releases tagged `v<version>`.
-- **Canary:** test prereleases tagged `canary-v<version>`, for users already configured for the Canary channel.
+Each version has one release tagged `v<version>`. It starts as a **Canary prerelease** for users configured for Canary. Acceptance promotes the same release to **Stable**, preserving its signed files. Stable users receive normal releases; Canary users can receive both prereleases and accepted Stable releases.
 
 Full and Delta `.nupkg` files and `releases.win.json` are consumed by the updater. Use the signed Setup executable for a first installation. A GitHub account is not required to download updates.
 
